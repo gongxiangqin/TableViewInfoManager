@@ -84,7 +84,7 @@
     }
     else if (indexPath.row==1) {
         MPTitleAndPromptCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([MPTitleAndPromptCell class]) forIndexPath:indexPath];
-        [cell setCellDataKey:@"姓名" curValue:self.myUserName blankValue:@"请输入姓名" isShowLine:YES cellType:MPTitleAndPromptCellTypeInput];
+        [cell setCellDataKey:@"姓名" curValue:self.myUserName blankValue:@"请输入姓名" blankValueColor:COLOR_RGB(0x333333, 1) isShowLine:YES cellType:MPTitleAndPromptCellTypeInput];
         cell.textValueChangedBlock = ^(NSString* text){
             self.myUserName = text;
         };
@@ -93,13 +93,13 @@
     else if (indexPath.row==2)
     {
         MPTitleAndPromptCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([MPTitleAndPromptCell class]) forIndexPath:indexPath];
-        [cell setCellDataKey:@"性别" curValue:self.mySex blankValue:@"请选择性别" isShowLine:YES cellType:MPTitleAndPromptCellTypeSelect];
+        [cell setCellDataKey:@"性别" curValue:self.mySex blankValue:@"请选择性别" blankValueColor:COLOR_RGB(0x333333, 1) isShowLine:YES cellType:MPTitleAndPromptCellTypeSelect];
         return cell;
     }
     else if (indexPath.row==3)
     {
         MPTitleAndPromptCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([MPTitleAndPromptCell class]) forIndexPath:indexPath];
-        [cell setCellDataKey:@"生日" curValue:self.myBirthday blankValue:@"请选择出生日期" isShowLine:YES cellType:MPTitleAndPromptCellTypeSelect];
+        [cell setCellDataKey:@"生日" curValue:self.myBirthday blankValue:@"请选择出生日期" blankValueColor:COLOR_RGB(0x333333, 1) isShowLine:YES cellType:MPTitleAndPromptCellTypeSelect];
         return cell;
     }
     else if (indexPath.row==4)

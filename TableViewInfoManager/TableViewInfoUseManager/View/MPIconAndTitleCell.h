@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface MPIconAndTitleCell : UITableViewCell
--(void)configCellIconName:(NSString *)iconName cellTitle:(NSString *)cellTitle showLine:(BOOL)isShowLine;
+-(void)configCellIconName:(NSString *)iconName
+                cellTitle:(NSString *)cellTitle
+                 showLine:(BOOL)isShowLine;
 @end

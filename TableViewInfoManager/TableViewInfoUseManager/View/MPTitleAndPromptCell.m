@@ -77,18 +77,23 @@ static const CGFloat spaceWith=15;
 }
 
 
--(void)setCellDataKey:(NSString *)curkey curValue:(NSString *)curvalue blankValue:(NSString *)blankvalue isShowLine:(BOOL)showLine cellType:(MPTitleAndPromptCellType)cellType
+-(void)setCellDataKey:(NSString *)curkey
+             curValue:(NSString *)curvalue
+           blankValue:(NSString *)blankvalue
+      blankValueColor:(UIColor *)blankValueColor
+           isShowLine:(BOOL)showLine
+             cellType:(MPTitleAndPromptCellType)cellType
 {
     self.keyLabel.text=curkey;
     self.lineView.hidden=!showLine;
     if ([curvalue length]==0) {
         self.valueTextField.placeholder=blankvalue;
-        self.valueTextField.textColor=COLOR_WORD_GRAY_2;
+        self.valueTextField.textColor=blankValueColor;
     }
     else
     {
         self.valueTextField.text=curvalue;
-        self.valueTextField.textColor=COLOR_WORD_BLACK;
+        self.valueTextField.textColor=blankValueColor;
     }
     switch (cellType) {
         case MPTitleAndPromptCellTypeInput: {

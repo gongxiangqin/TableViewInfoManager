@@ -26,7 +26,10 @@
  *  @param blankvalue 空值时的提示语
  *  @param isShowLine 是否显示下划线
  */
--(void)setCellDataKey:(NSString *)cellTitle textValue:(NSString *)textValue blankValue:(NSString *)blankvalue showLine:(BOOL)isShowLine;
+-(void)setCellDataKey:(NSString *)cellTitle
+            textValue:(NSString *)textValue
+           blankValue:(NSString *)blankvalue
+             showLine:(BOOL)isShowLine;
 
 //焦点事件
 -(BOOL)becomeFirstResponder;
