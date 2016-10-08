@@ -10,10 +10,16 @@
 #import "MPTitleAndPromptCell.h"
 #import "MPIconAndTitleCell.h"
 #import "MPMultitextCell.h"
+#import "TDDatePickerController.h"
+#import "DPickerViewController.h"
+#import "NSDate+Utils.h"
+#import <IQKeyboardManager/IQKeyboardManager.h>
 
-@interface DemoController ()<UITableViewDataSource, UITableViewDelegate>
+@interface DemoController ()<UITableViewDataSource, UITableViewDelegate,TDDatePickerControllerDelegate, DPickerViewControllerDelegate>
 @property (nonatomic,strong) UITableView *myTableView;
-
+@property(nonatomic, strong)TDDatePickerController *datePickerViewController;
+@property(nonatomic, strong)DPickerViewController *relationshipPickerViewController;
+@property(nonatomic, strong)NSIndexPath *selectedIndexPath;
 @property(nonatomic,copy)NSString *myUserName,*mySex,*myBirthday,*myAddress;
 @end
 
@@ -111,24 +117,31 @@
     return nil;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    self.selectedIndexPath = indexPath;
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
     if (indexPath.row==0) {
 
-        NSLog(@"点击成功");
-    }
-    else if(indexPath.row==1)
-    {
-
+        NSLog(@"点击设置成功");
     }
     else if(indexPath.row==2)
     {
-        NSLog(@"选择性别");
+        //弹出选择控制器之前先让键盘退出
+        [[IQKeyboardManager sharedManager] resignFirstResponder];
+        self.relationshipPickerViewController = [[DPickerViewController alloc] init];
+        self.relationshipPickerViewController.delegate = self;
+        self.relationshipPickerViewController.dataSource = @{@0: @[@"男", @"女"]};
+        [self presentSemiModalViewController:self.relationshipPickerViewController];
     }
     else if (indexPath.row==3)
     {
-        NSLog(@"选择生日");
+        [[IQKeyboardManager sharedManager] resignFirstResponder];
+        self.datePickerViewController = [[TDDatePickerController alloc] init];
+        self.datePickerViewController.selectedDate = [NSDate dateFromString:self.myBirthday];
+        self.datePickerViewController.delegate = self;
+        [self presentSemiModalViewController:self.datePickerViewController];
     }
 }
 
@@ -139,5 +152,39 @@
         return 0;
     }
     return index;
+}
+
+- (void)datePickerSetDate:(TDDatePickerController*)viewController{
+    if(self.selectedIndexPath.row == 3){
+        self.myBirthday = [viewController.selectedDate stringWithFormat:@"yyyy-MM-dd"];
+    }
+
+    [self.myTableView reloadData];
+    
+    [self dismissSemiModalViewController:viewController];
+    self.datePickerViewController = nil;
+}
+
+- (void)datePickerCancel:(TDDatePickerController*)viewController{
+    [self dismissSemiModalViewController:viewController];
+    self.datePickerViewController = nil;
+}
+
+- (void)pickerSave:(DPickerViewController*)viewController{
+    if ([viewController.selectedItem[@0] isEqualToString:@"女"]) {
+        self.mySex = @"女";
+    }else
+    {
+        self.mySex = @"男";
+    }
+    
+    [self.myTableView reloadData];
+    
+    [self dismissSemiModalViewController:viewController];
+    self.relationshipPickerViewController = nil;
+}
+- (void)pickerCancel:(DPickerViewController*)viewController{
+    [self dismissSemiModalViewController:viewController];
+    self.relationshipPickerViewController = nil;
 }
 @end

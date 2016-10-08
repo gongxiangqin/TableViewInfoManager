@@ -102,6 +102,7 @@ static const CGFloat spaceWith=15;
             break;
         }
         case MPTitleAndPromptCellTypeSelect: {
+            self.valueTextField.enabled = NO;
             self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             break;
         }

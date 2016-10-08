@@ -13,6 +13,14 @@
 		F075DD5B1DA8F4AB00EAF7A3 /* MPTitleAndPromptCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F075DD561DA8F4AB00EAF7A3 /* MPTitleAndPromptCell.m */; };
 		F075DD5C1DA8F4AB00EAF7A3 /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F075DD581DA8F4AB00EAF7A3 /* UIPlaceHolderTextView.m */; };
 		F075DD611DA8F4B300EAF7A3 /* DemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F075DD601DA8F4B300EAF7A3 /* DemoController.m */; };
+		F075DD6C1DA8F68400EAF7A3 /* DPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F075DD641DA8F68400EAF7A3 /* DPickerView.m */; };
+		F075DD6D1DA8F68400EAF7A3 /* DPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F075DD661DA8F68400EAF7A3 /* DPickerViewController.m */; };
+		F075DD6E1DA8F68400EAF7A3 /* TDDatePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F075DD681DA8F68400EAF7A3 /* TDDatePickerController.m */; };
+		F075DD6F1DA8F68400EAF7A3 /* TDTimePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F075DD6A1DA8F68400EAF7A3 /* TDTimePickerController.m */; };
+		F075DD701DA8F68400EAF7A3 /* TDTimePickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F075DD6B1DA8F68400EAF7A3 /* TDTimePickerController.xib */; };
+		F075DD771DA8F69000EAF7A3 /* TDSemiModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F075DD741DA8F69000EAF7A3 /* TDSemiModalViewController.m */; };
+		F075DD781DA8F69000EAF7A3 /* UIViewController+TDSemiModalExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F075DD761DA8F69000EAF7A3 /* UIViewController+TDSemiModalExtension.m */; };
+		F075DD7C1DA8F6A000EAF7A3 /* NSDate+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = F075DD7B1DA8F6A000EAF7A3 /* NSDate+Utils.m */; };
 		F0DFC89C1DA898B20082DF61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0DFC89B1DA898B20082DF61 /* main.m */; };
 		F0DFC89F1DA898B20082DF61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0DFC89E1DA898B20082DF61 /* AppDelegate.m */; };
 		F0DFC8A71DA898B20082DF61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0DFC8A61DA898B20082DF61 /* Assets.xcassets */; };
@@ -35,6 +43,22 @@
 		F075DD581DA8F4AB00EAF7A3 /* UIPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceHolderTextView.m; sourceTree = "<group>"; };
 		F075DD5F1DA8F4B300EAF7A3 /* DemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoController.h; sourceTree = "<group>"; };
 		F075DD601DA8F4B300EAF7A3 /* DemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoController.m; sourceTree = "<group>"; };
+		F075DD631DA8F68400EAF7A3 /* DPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPickerView.h; sourceTree = "<group>"; };
+		F075DD641DA8F68400EAF7A3 /* DPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPickerView.m; sourceTree = "<group>"; };
+		F075DD651DA8F68400EAF7A3 /* DPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPickerViewController.h; sourceTree = "<group>"; };
+		F075DD661DA8F68400EAF7A3 /* DPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPickerViewController.m; sourceTree = "<group>"; };
+		F075DD671DA8F68400EAF7A3 /* TDDatePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDDatePickerController.h; sourceTree = "<group>"; };
+		F075DD681DA8F68400EAF7A3 /* TDDatePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDDatePickerController.m; sourceTree = "<group>"; };
+		F075DD691DA8F68400EAF7A3 /* TDTimePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDTimePickerController.h; sourceTree = "<group>"; };
+		F075DD6A1DA8F68400EAF7A3 /* TDTimePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTimePickerController.m; sourceTree = "<group>"; };
+		F075DD6B1DA8F68400EAF7A3 /* TDTimePickerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TDTimePickerController.xib; sourceTree = "<group>"; };
+		F075DD721DA8F69000EAF7A3 /* TDSemiModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDSemiModal.h; sourceTree = "<group>"; };
+		F075DD731DA8F69000EAF7A3 /* TDSemiModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDSemiModalViewController.h; sourceTree = "<group>"; };
+		F075DD741DA8F69000EAF7A3 /* TDSemiModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDSemiModalViewController.m; sourceTree = "<group>"; };
+		F075DD751DA8F69000EAF7A3 /* UIViewController+TDSemiModalExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TDSemiModalExtension.h"; sourceTree = "<group>"; };
+		F075DD761DA8F69000EAF7A3 /* UIViewController+TDSemiModalExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TDSemiModalExtension.m"; sourceTree = "<group>"; };
+		F075DD7A1DA8F6A000EAF7A3 /* NSDate+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utils.h"; sourceTree = "<group>"; };
+		F075DD7B1DA8F6A000EAF7A3 /* NSDate+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utils.m"; sourceTree = "<group>"; };
 		F0DFC8971DA898B20082DF61 /* TableViewInfoManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewInfoManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0DFC89B1DA898B20082DF61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0DFC89D1DA898B20082DF61 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -100,6 +124,9 @@
 		F075DD5D1DA8F4B300EAF7A3 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				F075DD791DA8F6A000EAF7A3 /* NSDate */,
+				F075DD711DA8F69000EAF7A3 /* TDSemiModalViewController */,
+				F075DD621DA8F68400EAF7A3 /* TDPickerController */,
 				F075DD5E1DA8F4B300EAF7A3 /* Controller */,
 			);
 			path = Demo;
@@ -112,6 +139,43 @@
 				F075DD601DA8F4B300EAF7A3 /* DemoController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		F075DD621DA8F68400EAF7A3 /* TDPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				F075DD631DA8F68400EAF7A3 /* DPickerView.h */,
+				F075DD641DA8F68400EAF7A3 /* DPickerView.m */,
+				F075DD651DA8F68400EAF7A3 /* DPickerViewController.h */,
+				F075DD661DA8F68400EAF7A3 /* DPickerViewController.m */,
+				F075DD671DA8F68400EAF7A3 /* TDDatePickerController.h */,
+				F075DD681DA8F68400EAF7A3 /* TDDatePickerController.m */,
+				F075DD691DA8F68400EAF7A3 /* TDTimePickerController.h */,
+				F075DD6A1DA8F68400EAF7A3 /* TDTimePickerController.m */,
+				F075DD6B1DA8F68400EAF7A3 /* TDTimePickerController.xib */,
+			);
+			path = TDPickerController;
+			sourceTree = "<group>";
+		};
+		F075DD711DA8F69000EAF7A3 /* TDSemiModalViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F075DD721DA8F69000EAF7A3 /* TDSemiModal.h */,
+				F075DD731DA8F69000EAF7A3 /* TDSemiModalViewController.h */,
+				F075DD741DA8F69000EAF7A3 /* TDSemiModalViewController.m */,
+				F075DD751DA8F69000EAF7A3 /* UIViewController+TDSemiModalExtension.h */,
+				F075DD761DA8F69000EAF7A3 /* UIViewController+TDSemiModalExtension.m */,
+			);
+			path = TDSemiModalViewController;
+			sourceTree = "<group>";
+		};
+		F075DD791DA8F6A000EAF7A3 /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				F075DD7A1DA8F6A000EAF7A3 /* NSDate+Utils.h */,
+				F075DD7B1DA8F6A000EAF7A3 /* NSDate+Utils.m */,
+			);
+			path = NSDate;
 			sourceTree = "<group>";
 		};
 		F0DFC88E1DA898B20082DF61 = {
@@ -217,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F075DD701DA8F68400EAF7A3 /* TDTimePickerController.xib in Resources */,
 				F0DFC8AA1DA898B20082DF61 /* LaunchScreen.storyboard in Resources */,
 				F0DFC8A71DA898B20082DF61 /* Assets.xcassets in Resources */,
 			);
@@ -277,11 +342,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F075DD6F1DA8F68400EAF7A3 /* TDTimePickerController.m in Sources */,
 				F075DD591DA8F4AB00EAF7A3 /* MPIconAndTitleCell.m in Sources */,
 				F075DD5C1DA8F4AB00EAF7A3 /* UIPlaceHolderTextView.m in Sources */,
 				F075DD611DA8F4B300EAF7A3 /* DemoController.m in Sources */,
+				F075DD6D1DA8F68400EAF7A3 /* DPickerViewController.m in Sources */,
 				F075DD5A1DA8F4AB00EAF7A3 /* MPMultitextCell.m in Sources */,
 				F075DD5B1DA8F4AB00EAF7A3 /* MPTitleAndPromptCell.m in Sources */,
+				F075DD6C1DA8F68400EAF7A3 /* DPickerView.m in Sources */,
+				F075DD7C1DA8F6A000EAF7A3 /* NSDate+Utils.m in Sources */,
+				F075DD781DA8F69000EAF7A3 /* UIViewController+TDSemiModalExtension.m in Sources */,
+				F075DD771DA8F69000EAF7A3 /* TDSemiModalViewController.m in Sources */,
+				F075DD6E1DA8F68400EAF7A3 /* TDDatePickerController.m in Sources */,
 				F0DFC89F1DA898B20082DF61 /* AppDelegate.m in Sources */,
 				F0DFC89C1DA898B20082DF61 /* main.m in Sources */,
 			);
