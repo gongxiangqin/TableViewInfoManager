@@ -117,6 +117,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
     if (indexPath.row==0) {
+
         NSLog(@"点击成功");
     }
     else if(indexPath.row==1)
