@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  TableViewInfoManager
+//
+//  Created by gong on 16/10/8.
+//  Copyright © 2016年 George. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <Masonry/Masonry.h>
+#import "Macros.h"
+
+#endif /* PrefixHeader_pch */
